@@ -1,14 +1,17 @@
-*{
-    box-sizing: border-box;
+@import url('https://fonts.googleapis.com/css?family=Open+Sans&display=swap');
+
+* {
+  box-sizing: border-box;
 }
+
 body {
-    background-color: #222457;
-    font-family: 'Open Sans', sans-serif;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    height: 100vh;
-    margin: 0;
+  background-color: pink;
+  font-family: 'Open Sans', sans-serif;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  margin: 0;
 }
 header {
     background-color: #333;
@@ -23,63 +26,68 @@ header {
 header h1 {
     margin: 0;
 }
+
 .phone {
-    position: relative;
-    overflow: hidden;
-    border: 3px solid #eee;
-    border-radius: 15px;
-    height: 600px;
-    width: 340px;
+  position: relative;
+  overflow: hidden;
+  border: 3px inset black;
+  border-radius: 15px;
+  height: 600px;
+  width: 340px;
 }
-.phone .content{
-    opacity: 0;
-    object-fit: cover;
-    position: absolute;
-    top: 0;
-    left: 0;
-    height: calc(200% -60px);
-    width: 100%;
-    transition: opacity 0.4s ease;
 
+.phone .content {
+  opacity: 0;
+  object-fit: cover;
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: calc(100% - 60px);
+  width: 100%;
+  transition: opacity 0.4s ease;
 }
+
 .phone .content.show {
-    opacity: 1;
-
+  opacity: 1;
 }
 
 nav {
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    margin-top: -5px;
-    width: 100%;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  margin-top: -5px;
+  width: 100%;
 }
 
-nav ul  {
-    background-color: #fff;
-    display: flex;
-    list-style-type: none;
-    padding: 0;
-    margin: 0;
-    height: 60px;
+nav ul {
+  background-color: #3366ff;
+  border-top: 3px solid black;
+  display: flex;
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  height: 60px;
 }
 
 nav li {
-    color: #6461a2;
-    cursor: pointer;
-    flex: 1;
-    padding: 10px;
-    text-align: center;
+  color: black;
+  cursor: pointer;
+  flex: 1;
+  padding: 10px;
+  text-align: center;
 }
 
 nav ul li p {
-    font-size: 12px;
-    margin: 2px 0;
-
+  font-size: 12px;
+  margin: 2px 0;
 }
 
-nav ul li:hover, nav ul li:active {
-    color: #8e44ad;
+nav ul li:hover{
+  color: #39e600;
+}
+nav ul li.active {
+  color: white;
+}
 }
 footer {
     background-color: #333;
@@ -94,3 +102,7 @@ footer {
 footer h2 {
     margin: 0;
 }
+
+
+
+
